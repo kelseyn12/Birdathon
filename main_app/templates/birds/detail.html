@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Bird Details</h1>
+
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ bird.name }}</span>
+    <p>Family: {{ bird.family }}</p>
+    <p>Habitat: {{ bird.habitat }}</p>
+    <p>Food: {{ bird.food }}</p>
+    <p>Nesting: {{ bird.nesting }}</p>
+    <p>Behavior: {{ bird.behavior }}</p>
+    <p>Description: {{ bird.description }}</p>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Bird Details</h1>
+
+{% for bird in birds %}
+<div class="card">
+    <a href="{% url 'detail' bird.id %}"></a>
+  <div class="card-content">
+    <span class="card-title">{{ bird.name }}</span>
+    <p>Family: {{ bird.family }}</p>
+    <p>Habitat: {{ bird.habitat }}</p>
+    <p>Food: {{ bird.food }}</p>
+    <p>Nesting: {{ bird.nesting }}</p>
+    <p>Behavior: {{ bird.behavior }}</p>
+    <p>Description: {{ bird.description }}</p>
+
+  </div>
+</a>
+</div>
+
+{% endfor %} {% endblock %}
