@@ -12,7 +12,11 @@
     <p>Nesting: {{ bird.nesting }}</p>
     <p>Behavior: {{ bird.behavior }}</p>
     <p>Description: {{ bird.description }}</p>
-
+    
+  </div>
+  <div class="card-action">
+    <a href="{% url 'birds_update' bird.id %}">Edit</a>
+    <a href="{% url 'birds_delete' bird.id %}">Delete</a>
   </div>
 </div>
 
